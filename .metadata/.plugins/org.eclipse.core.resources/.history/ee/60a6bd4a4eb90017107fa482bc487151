@@ -1,0 +1,44 @@
+package aidEval;
+
+public class JsonCodeBase {
+	double problemNum;
+	String originalCodeString;
+	String uid;
+	String[] type;
+	String[] code;
+	
+	public double getProblemNum() {
+		return problemNum;
+	}
+	public void setProblemNum(double problemNum) {
+		this.problemNum = problemNum;
+	}
+	public String getOriginalCodeString() {
+		return originalCodeString;
+	}
+	public void setOriginalCodeString(String originalCodeString) {
+		this.originalCodeString = originalCodeString;
+	}
+	public String getUid() {
+		return uid;
+	}
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+	public String[] getType() {
+		return type;
+	}
+	public void setType(String[] type) {
+		this.type = type;
+	}
+	public String[] getCode() {
+		return code;
+	}
+	public void setCode(String[] code) {
+		this.code = code;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,13 @@
+package aidEval;
+import com.google.gson.*;
+import java.util.HashMap;
+import java.util.Map;
+public class TestGsonHandler {
+
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package aidEval;
+import com.google.gson.*;
+
+public class TestGsonHandler {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Gson gson = new Gson();
+	}
+
+}

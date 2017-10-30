@@ -1,0 +1,6 @@
+package aidEval;
+
+public class JsonCodeBase {
+	String[] type;
+	String[] code;
+}
