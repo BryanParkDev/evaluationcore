@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/Users/Bryan/Desktop/eval/aidEval/jarLib/gson-2.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/Bryan/Desktop/eval/aidEval/jarLib/commons-io-2.5/commons-io-2.5.jar"/>
+	<classpathentry kind="var" path="AID_EXT_JAR_GSON"/>
+	<classpathentry kind="var" path="AID_EXT_JAR_CIO"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
