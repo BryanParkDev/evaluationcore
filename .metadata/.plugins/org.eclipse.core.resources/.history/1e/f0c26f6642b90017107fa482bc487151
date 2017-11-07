@@ -1,7 +1,0 @@
-package aidEval;
-
-public class JsonCodeBase {
-	String uid;
-	String type;
-	String code;
-}
