@@ -44,9 +44,8 @@ public class JsonCodeParser {
 				
 			}
 			
-			/*init hashmap
+			//init hashmap
 			initMap();
-			*/
 						
 		}
 
@@ -59,19 +58,19 @@ public class JsonCodeParser {
 		System.out.println(this.jcb.getUid());
 		System.out.println(this.jcb.type.subList(0, this.jcb.type.size()));
 		System.out.println(this.jcb.code.subList(0, this.jcb.code.size()));
-		/*
+		
 		for(Map.Entry<ArrayList<String>, ArrayList<String>> entry : this.jcb.codeTypeMap.entrySet()) {
 			System.out.println(entry.getKey());
 			System.out.println(entry.getValue());
 		}
-		*/
+		
 	}
 	
 	//TODO: Mapper Initialize
 	//TODO: 보류
-	/*public void initMap() {
+	public void initMap() {
 			jcb.codeTypeMap.put(jcb.type, jcb.code);
-	}*/
+	}
 	
 	
 	// JsonCodeBase Class includes :
@@ -81,11 +80,9 @@ public class JsonCodeParser {
 		double problemNum;
 		String originalCodeString;
 		String uid;
-		
-		// type index = code index
 		ArrayList<String> type = new ArrayList<String>();
 		ArrayList<String> code = new ArrayList<String>();
-		//Map<ArrayList<String>, ArrayList<String>> codeTypeMap = new HashMap<ArrayList<String>, ArrayList<String>>();
+		Map<ArrayList<String>, ArrayList<String>> codeTypeMap = new HashMap<ArrayList<String>, ArrayList<String>>();
 		
 		public JsonCodeBase() {
 			this.problemNum = 0;

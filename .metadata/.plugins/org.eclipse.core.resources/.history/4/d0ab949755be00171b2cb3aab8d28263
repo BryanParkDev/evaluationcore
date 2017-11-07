@@ -44,9 +44,8 @@ public class JsonCodeParser {
 				
 			}
 			
-			/*init hashmap
+			//init hashmap
 			initMap();
-			*/
 						
 		}
 
@@ -81,8 +80,6 @@ public class JsonCodeParser {
 		double problemNum;
 		String originalCodeString;
 		String uid;
-		
-		// type index = code index
 		ArrayList<String> type = new ArrayList<String>();
 		ArrayList<String> code = new ArrayList<String>();
 		//Map<ArrayList<String>, ArrayList<String>> codeTypeMap = new HashMap<ArrayList<String>, ArrayList<String>>();

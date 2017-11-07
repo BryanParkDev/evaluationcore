@@ -57,6 +57,7 @@ public class JsonCodeParser {
 		System.out.println(this.jcb.getProblemNum());
 		System.out.println(this.jcb.getOriginalCodeString());
 		System.out.println(this.jcb.getUid());
+		System.out.println(this.jcb.type.get(0));
 		System.out.println(this.jcb.type.subList(0, this.jcb.type.size()));
 		System.out.println(this.jcb.code.subList(0, this.jcb.code.size()));
 		/*
@@ -81,8 +82,6 @@ public class JsonCodeParser {
 		double problemNum;
 		String originalCodeString;
 		String uid;
-		
-		// type index = code index
 		ArrayList<String> type = new ArrayList<String>();
 		ArrayList<String> code = new ArrayList<String>();
 		//Map<ArrayList<String>, ArrayList<String>> codeTypeMap = new HashMap<ArrayList<String>, ArrayList<String>>();

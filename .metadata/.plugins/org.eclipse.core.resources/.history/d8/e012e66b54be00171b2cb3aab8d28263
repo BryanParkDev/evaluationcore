@@ -47,7 +47,6 @@ public class EvaluationImpl extends EvaluationBase implements EvalInterface {
 	}
 
 	// Set final overall score of the user
-	//TODO: 상세 나누기 코딩하기
 	public void setFinalGrade() {
 		finalGradeNum = (accuracy * w_acc) + (similarity * w_sim) + (loc * w_loc) + (timeComplexity * w_tc)
 				+ (spaceComplexity * w_sc);
