@@ -8,12 +8,12 @@ public class EvalTest {
 		
 		//TODO: DB-> Grade Array (JSON, OR DIRECT PASS)
 		//temp grade array
-		int[] gradeArray = {2,3,3,1,1};
+		int[] gradeArray = {1,3,3,3,3};
 		
 		User user1 = new User(gradeArray);
 		user1.showGrades();
 		user1.showFinalGrade();
 		
-		user1.processTest();
+		user1.processUserData();
 	}
 }

@@ -1,0 +1,72 @@
+package aidEval;
+
+import java.util.ArrayList;
+
+public class EvaluationImpl extends EvaluationBase implements EvalInterface {
+
+	ArrayList<String> gradeList = new ArrayList<String>();
+
+	@Override
+	public void init() {
+		// map grades
+		// A = 3 points, B = 2 points , C = 1 point
+
+		gradeTable.put(3, "A");
+		gradeTable.put(2, "B");
+		gradeTable.put(1, "C");
+	}
+
+	// Essential score mapping part. Always has to be included in the User
+	// Constructor
+	@Override
+	public void matchMap() {
+		// initialize the map first.
+		init();
+
+		/*
+		 * add five Evaluation elements to list This process level converts integer
+		 * grades into Strings (A,B,C)
+		 */
+		gradeList.add(gradeTable.get(accuracy));
+		gradeList.add(gradeTable.get(similarity));
+		gradeList.add(gradeTable.get(loc));
+		gradeList.add(gradeTable.get(timeComplexity));
+		gradeList.add(gradeTable.get(spaceComplexity));
+
+		// set overall score after mapping
+		setFinalGrade();
+	}
+	
+	//TODO: SC , TC Evaluation tool (Jython discontinued)
+	
+
+	// get grades to array
+	@Override
+	public String[] gradesToArray() {
+		return gradeList.toArray(new String[GRADE_NUM]);
+	}
+
+	// Set final overall score of the user
+	//TODO: 상세 나누기 코딩하기
+	public void setFinalGrade() {
+		
+		
+		//if accuracy doesn't meet the conditions, set similarity grade o 1
+		if(accuracy  == 1)
+			similarity = 1;
+		
+		finalGradeNum = (accuracy * w_acc) + (similarity * w_sim) + (loc * w_loc) + (timeComplexity * w_tc)
+				+ (spaceComplexity * w_sc);
+
+		// Conversion into A,B,C grades
+		if (finalGradeNum >= 2.3)
+			finalGradeStr = "A";
+		else {
+			if (finalGradeNum < 1.7) {
+				finalGradeStr = "C";
+			} else
+				finalGradeStr = "B";
+		}
+	}
+
+}

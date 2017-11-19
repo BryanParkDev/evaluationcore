@@ -1,6 +1,6 @@
 package aidEval;
 
-public class User extends EvaluationImpl{
+public class User extends EvaluationExtended{
 
 	/*Caution!
 	 *index 0 = accuracy
@@ -12,7 +12,7 @@ public class User extends EvaluationImpl{
 	String myCode = null;
 	
 	//code parser object
-	JsonCodeParser jcp = new JsonCodeParser();
+	CodeGrader cg = new CodeGrader();
 	
 	//TODO Add multiple user Interface
 	
@@ -59,9 +59,8 @@ public class User extends EvaluationImpl{
 		System.out.println("Overall Rating: "+finalGradeStr);	
 	}
 	
-	protected void processTest() {
-		jcp.processJson();
-		jcp.testIO();
+	protected void processUserData() {
+		cg.init();
 	}
 	
 	

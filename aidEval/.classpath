@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/Users/Bryan/Desktop/eval/aidEval/jarLib/gson-2.6.2.jar"/>
 	<classpathentry kind="lib" path="/Users/Bryan/Desktop/eval/aidEval/jarLib/commons-io-2.5/commons-io-2.5.jar"/>
+	<classpathentry kind="var" path="mysql_connector"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

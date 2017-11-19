@@ -1,0 +1,19 @@
+package aidEval;
+
+public class CodeGrader extends JsonCodeParser{
+	
+	public void init() {
+		processJson();
+		
+	}
+	
+	public void gradeLoc() {
+		
+	}
+	
+	public void gradeSim() {}
+	public void gradeAcc() {}
+	public void gradeSc() {}
+	public void gradeTc() {}
+	
+}

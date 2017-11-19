@@ -1,0 +1,11 @@
+package aidEval;
+
+public class CodeGrader extends JsonCodeParser{
+	
+	public void start() {
+		processJson();
+		System.out.println(this.jcb.originalCodeString);
+		
+	}
+	
+}

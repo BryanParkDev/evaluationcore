@@ -1,0 +1,16 @@
+package DBconnect;
+import  java.sql.*;
+ 
+public class Connect {
+	public Connection conn = null; //√ ±‚»≠
+
+	public void connectDB() throws SQLException, ClassNotFoundException
+	{
+		  String url = "jdbc:mysql://localhost:3306/mydb";
+		  String ID = "root";         
+		  String PW = "0000";     
+		  Class.forName("com.mysql.jdbc.Driver");
+		  conn=DriverManager.getConnection(url,ID,PW); 		
+	}
+	
+}
